@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import "./PostList.css";
 
+import Post from "./Post";
+
 class PostList extends Component {
   state = {
     posts: [
@@ -90,7 +92,9 @@ class PostList extends Component {
   render() {
     return (
       <main className="main">
-        <h1>Hello World</h1>
+        {this.state.posts.map((post, index) => (
+          <Post key={index} post={post} />
+        ))}
       </main>
     );
   }

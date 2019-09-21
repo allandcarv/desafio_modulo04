@@ -3,3 +3,72 @@
   margin: 10px auto;
   padding: 5px;
 }
+
+.post {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+}
+
+.post__header img,
+.comments img {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.post__header .post__author {
+  font-weight: bold;
+}
+
+.post__header .header__info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post__header .post__date {
+  color: #b3b3b3;
+}
+
+.post .post__body {
+  margin-top: 20px;
+}
+
+.post .comments {
+  margin-top: 40px;
+}
+
+.comments {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.comments .comment__body {
+  background-color: #e9ebee;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.comments .comment__author {
+  font-weight: bold;
+}
+
+.comments .comment__text {
+  margin-left: 5px;
+}
